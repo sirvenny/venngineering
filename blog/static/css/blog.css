@@ -1,18 +1,58 @@
+#center_row{
+  margin-top: 0px;
+  background-color: transparent;
+  height: auto;
+}
+
+#center_content{
+  background-color: white;
+  margin-top: 0px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 10px;
+  max-width: none;
+  width: 100%;
+  padding-top: 10px;
+}
+
+body{
+  background-image: url('/static/images/blueprintpattern.jpg');
+}
+
+#center_container{
+  outline: 1px solid white;
+  background: transparent;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 0px;
+  max-width: none;
+  width: auto;
+}
+
+.navbar{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: -1px;
+  border-bottom: solid;
+}
+
 h1 a {
-  color: #FCA205;
-  font-family: 'Lobster';
+  color: #212529;
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin-bottom: 0px;
 }
 
 .page-header {
-  background-color: #ff9400;
+  background-color: #f8f9fa;
   margin-top: 0;
-  padding: 20px 20px 20px 40px;
+  padding: 0px 20px 0px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
-  color: #ffffff;
+  color: #212529;
   font-size: 36pt;
   text-decoration: none;
+  margin-bottom: 0px;
 }
 
 .content {
@@ -20,7 +60,11 @@ h1 a {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Lobster', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1{
+  font-weight: bold;
 }
 
 .date {
