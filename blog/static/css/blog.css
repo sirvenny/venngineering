@@ -16,7 +16,8 @@
 }
 
 body{
-  background-image: url('/static/images/blueprintpattern.jpg');
+  background-image: url('/static/images/blueprint-pattern.png');
+  background-size: 100px 100px;
 }
 
 #center_container{
