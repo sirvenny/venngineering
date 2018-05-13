@@ -16,12 +16,12 @@
 }
 
 body{
-  background-image: url('/static/images/blueprint-pattern.png');
+  background-image: url('/static/images/grid1.jpg');
   background-size: 100px 100px;
 }
 
 #center_container{
-  outline: 1px solid white;
+  /* outline: 1px solid white; */
   background: transparent;
   margin-right: 20px;
   margin-left: 20px;
@@ -31,10 +31,27 @@ body{
 }
 
 .navbar{
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   margin-bottom: -1px;
-  border-bottom: solid;
+  border-bottom: none;
+
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-nav {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-left: black solid;
+}
+
+.navbar-nav a {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 h1 a {
