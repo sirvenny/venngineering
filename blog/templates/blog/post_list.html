@@ -4,11 +4,18 @@
       <div class="post">
         <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
         <hr>
-        <div class="date">
-          <p>published: {{ post.published_date }}</p>
+        <div class="row" id="TagDateRow">
+          <div class="col-md-8">
+              <i class="fas fa-tag" id="icons"></i> Tag1, tag2
+          </div>
+          <div class="col-md-4">
+            <div class="date">
+              <i class="fas fa-clock" id="icons"></i> {{ post.published_date }}
+            </div>
+          </div>
 
-        </div>
-        <p>{{ post.text|linebreaksbr }}</p>
       </div>
+      <p>{{ post.text|safe }}</p>
+    </div>
     {% endfor %}
   {% endblock %}

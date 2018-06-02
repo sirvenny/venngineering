@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'taggit',
     'markdownx',
     'ckeditor',
-    'ckeditor_uploader',
+    'ckeditor_uploader'
 ]
 
 MIDDLEWARE = [
@@ -129,4 +129,13 @@ MEDIA_ROOT = '/Users/Josh/Documents/Website/media/'
 
 MEDIA_URL = '/media/'
 
-CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor"
+CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_IMAGE_BACKEND = "pillow"
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': None,
+    },
+}

@@ -1,4 +1,16 @@
+#icons{
+  color: Tomato;
+}
 
+#TagDateRow{
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+hr{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 #center_row{
   margin-top: 0px;
   background-color: transparent;
