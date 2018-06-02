@@ -1,5 +1,13 @@
+body{
+  padding-top: 100px;
+}
+
+.head-letters.shrink{
+  text.transform: uppercase;
+}
+
 #icons{
-  color: Tomato;
+  color: #F25F5C;
 }
 
 #TagDateRow{
@@ -7,9 +15,21 @@
   font-size: 13px;
 }
 
+#tags{
+  -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+    cursor: pointer;
+}
+
+#tags:hover {
+    color: #F25F5C;
+    text-decoration: underline;
+}
+
 hr{
   margin-top: 10px;
   margin-bottom: 5px;
+  background-color: #F25F5C;
 }
 #center_row{
   margin-top: 0px;
@@ -52,16 +72,35 @@ body{
 
 }
 
-.navbar-brand {
+
+nav.navbar.shrink .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
+  font-size: 30pt;
+  transition: all 1.5s ease;
 }
+
+.jumbotron {
+  /* background-image: url(/static/images/Blueprint_of_Victory.jpg); */
+}
+
+
+.navbar-brand {
+  padding-top: 8;
+  padding-bottom: 8;
+  font-size: 36pt;
+  position: relative;
+  z-index: 1;
+}
+
+
 
 .navbar-nav {
   padding-top: 4px;
   padding-bottom: 4px;
   border-left: black solid;
 }
+
 
 .navbar-nav a {
   padding-top: 0;
@@ -72,6 +111,14 @@ h1 a {
   color: #212529;
   font-family: 'PT Sans Narrow', sans-serif;
   margin-bottom: 0px;
+  -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+h1 a:hover {
+  color: #F25F5C;
+}
+
 }
 
 .page-header {
@@ -97,6 +144,7 @@ h1, h2, h3, h4 {
 
 h1{
   font-weight: bold;
+  cursor: pointer;
 }
 
 .date {
@@ -120,8 +168,4 @@ h1{
 
 .post {
   margin-bottom: 70px;
-}
-
-.post h1 a, .post h1 a:visited{
-  color: #000000;
 }

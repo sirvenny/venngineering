@@ -1,5 +1,16 @@
 {% extends 'blog/base.html' %}
   {% block content %}
-    <h2>FRONT PAGE<h2>
-      
+  <div class="container">
+    <div class="jumbotron">
+      <h1><span class="head-letters" style="color:#247BA0">V</span><span class="fade-text" id="en" style="color:#212529" >en</span><span id="ng" style="color:#247BA0">ng</span><span class="fade-text" style="color:#212529">ineering</span></h1>
+      <p>A blog about my projects in hardware, software, and everything in between</p>
+    </div>
+  <div class="row" id="latest3">
+    {% for post in posts %}
+    <div class="col-md-3">
+      <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+    </div>
+    {% endfor %}
+  </div>
+</div>
   {% endblock %}

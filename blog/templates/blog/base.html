@@ -8,6 +8,7 @@
         <link rel="stylesheet" href='{% static "css/blog.css" %}'/>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="{% static "js/rango-jquery.js" %}"></script>
         <script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
         <script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
@@ -17,8 +18,10 @@
       <div class="page-header">
           <!-- <h1><a href="/">Venngineering</a></h1> -->
 
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
-          <h1 class="navbar-brand" href="/">Venngineering</h1>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+          <a class="navbar-brand" href="/"><h1>
+            <span class="head-letters" style="color:#247BA0">V</span><span class="fade-text" id="en" style="color:#212529" >en</span><span id="ng" style="color:#247BA0">ng</span><span class="fade-text" style="color:#212529">ineering</span></h1>
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

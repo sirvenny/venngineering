@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'taggit',
-    'markdownx',
     'ckeditor',
     'ckeditor_uploader'
 ]
@@ -125,7 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_root = os.path.join(BASE_DIR, 'static')
 
-MEDIA_ROOT = '/Users/Josh/Documents/Website/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 

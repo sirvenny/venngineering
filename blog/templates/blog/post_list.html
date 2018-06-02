@@ -6,7 +6,7 @@
         <hr>
         <div class="row" id="TagDateRow">
           <div class="col-md-8">
-              <i class="fas fa-tag" id="icons"></i> Tag1, tag2
+              <i class="fas fa-tag" id="icons"></i>{% for tag in post.tags.all %} <span id="tags">{{ tag.name }}</span>  {% endfor %}
           </div>
           <div class="col-md-4">
             <div class="date">
@@ -14,8 +14,17 @@
             </div>
           </div>
 
+        </div>
+        <div class="row" id="post list description">
+          <div class="col-md-4">
+            <p><img src="{{ post.post_image.url }}" width="300px"></p>
+          </div>
+          <div class="col-md-8">
+            <p>{{ post.description|safe }}</p>
+          </div>
+        </div>
+
+
       </div>
-      <p>{{ post.text|safe }}</p>
-    </div>
     {% endfor %}
   {% endblock %}
