@@ -10,7 +10,7 @@
   <div class="card-deck">
     {% for post in posts %}
     <div class="card">
-      <a href="{% url 'post_detail' pk=post.pk %}"><img class="card-img-top" src="{{ post.post_image.url }}" alt="Latest Post"></a>
+      <a href="{% url 'post_detail' pk=post.pk %}"><img class="card-img-top" src="{{ post.post_image.url }}" style="height: 200px;" alt="Latest Post"></a>
       <div class="card-body">
         <h5 class="card-title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h5>
       </div>
