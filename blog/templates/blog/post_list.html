@@ -1,7 +1,8 @@
 {% extends 'blog/base.html' %}
   {% block content %}
     {% for post in posts %}
-      <div class="post">
+
+      <div class="container-fluid post">
         <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
         <hr>
         <div class="row" id="TagDateRow">
@@ -15,11 +16,9 @@
           </div>
 
         </div>
-        <div class="row" id="post list description">
-          <div class="col-md-4">
-            <p><img src="{{ post.post_image.url }}" width="300px"></p>
-          </div>
-          <div class="col-md-8">
+        <div class="media" id="post list description">
+          <a href="{% url 'post_detail' pk=post.pk %}"><img class="mr-3" src="{{ post.post_image.url }}" alt="Post Image" width="300px"></a>
+          <div class="media-body">
             <p>{{ post.description|safe }}</p>
           </div>
         </div>
