@@ -17,7 +17,7 @@
 
         </div>
         <div class="media" id="post list description">
-          <a href="{% url 'post_detail' pk=post.pk %}"><img class="mr-3" src="{{ post.post_image.url }}" alt="Post Image" width="300px"></a>
+          <a href="{% url 'post_detail' pk=post.pk %}"><img class="mr-3 rounded" src="{{ post.post_image.url }}" alt="Post Image" width="250px" height="250px"></a>
           <div class="media-body">
             <p>{{ post.description|safe }}</p>
           </div>
